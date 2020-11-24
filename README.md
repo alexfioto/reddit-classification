@@ -1,3 +1,5 @@
+![](./assets/reddit-2.jpg)
+
 # Machine Learning and Artificial Intelligence Subreddit Classification
 
 
