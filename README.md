@@ -1,10 +1,10 @@
-# Machine Learning and Artificial Intelligence Subreddit Classification
+# Subreddit Classification
 
 ![](./assets/reddit-2.jpg)
 
 
 ## Introduction
-Utilizing PushShift's api to scrape Reddit post data, this project aims to classify posts as [Machine Learning](https://www.reddit.com/r/MachineLearning/) and [Artificial Intelligence](https://www.reddit.com/r/ArtificialInteligence/) using data from the respective subreddits.
+Utilizing PushShift's api to scrape Reddit post data, this project aims to classify posts as either from [Machine Learning](https://www.reddit.com/r/MachineLearning/) or from [Artificial Intelligence](https://www.reddit.com/r/ArtificialInteligence/) using data from the respective subreddits.
 
 
 I utilize the following python libaries:
@@ -25,6 +25,10 @@ Trained on data from two similar subreddits, how well can a model classify a Red
 Using accuracy and f-1 score as primary metrics, I will train a Naive-Bayes and Random Forest Classifier using 20,000 rows of data scraped from Reddit.
 
 
+## Executive Summary
+
+I will be analyzing and modeling data scraped from Reddit. The subreddits to be classified are from the Machine Learning and Artificial Intelligence subreddits. After webscraping and exploratory data analysis, I found many common words between the two subreddits. I preprocessed the text using lemmatization, lowercasing, to be fed into word vectorizers. I used two types of word vectorizers: a Count Vectorizer and a Term Frequency-Inverse Document Frequency vectorizer (or TFIDF). I used two classification models, a Multinomial Naive Bayes and a Random Forest. The Random Forest classifier scored the highest accuracy of 85%. 
+
 
 ## Overview
 
@@ -37,11 +41,7 @@ Using accuracy and f-1 score as primary metrics, I will train a Naive-Bayes and 
 - Basic Naive-bayes classification model aided by grid searching
 - Basic Random Forest classification model aided by grid searching
 - Conclusions and recommendations
-
-
-## Executive Summary
-
-I will be analyzing and modeling data scraped from Reddit. The subreddits to be classified are from the Machine Learning and Artificial Intelligence subreddits. Below, I have broken down the process for each notebook. 
+ 
 
 ### Notebook 3.1 Web Scraping
 
