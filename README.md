@@ -29,6 +29,8 @@ Using accuracy and f-1 score as primary metrics, I will train a Naive-Bayes and 
 
 I will be analyzing and modeling data scraped from Reddit. The subreddits to be classified are from the Machine Learning and Artificial Intelligence subreddits. After webscraping and exploratory data analysis, I found many common words between the two subreddits. I preprocessed the text using lemmatization, lowercasing, to be fed into word vectorizers. I used two types of word vectorizers: a Count Vectorizer and a Term Frequency-Inverse Document Frequency vectorizer (or TFIDF). I used two classification models, a Multinomial Naive Bayes and a Random Forest. The Random Forest classifier scored the highest accuracy of 85%. 
 
+UPDATE: Added Neural Network model. Highest accuracy is approximately 83%. 
+
 
 ## Overview
 
